@@ -1,13 +1,19 @@
-# Sample Hardhat Project
+Automated Market Makers (AMMs) are essential to the decentralized finance (DeFi) ecosystem because they facilitate trading and liquidity provision. The Constant Product AMM, which powers well-known decentralized exchanges like Uniswap and SushiSwap, is a fundamental idea in this field.
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+In this blog, we'll examine theConstant Product Automated Market Maker and explore the arithmetic involved in introducing and withdrawing liquidity.
+The basic principle behind Constant AMM is the constant product formula, which ensures that the product of the quantities of two tokens in the pool remains constant.
+Working Principle
+The Constant AMM works on the following equation:
 
-Try running some of the following tasks:
+x * y = k
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+
+Where:
+
+x represents the quantity of Token A in the liquidity pool(CPAMM).
+
+y represents the quantity of Token B in the liquidity pool(CPAMM).
+
+k is a constant value that remains unchanged during swaps (until liquidity is added or removed).
+
+CPAMM:Constant Product Automated Market Maker
